@@ -1,6 +1,7 @@
 # Hello
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
+You can access this project that published at GitHub, (Click Here)[https://haoguanjun.github.io/ng-hello/].
 
 ## Development server
 
