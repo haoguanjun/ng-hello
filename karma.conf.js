@@ -23,6 +23,20 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: ['progress', 'kjhtml'],
+    // 测试结果报告的类型
+    coverageReporter:{
+        reporters: [{
+            type:'text-summary'
+        }, {
+            type: 'html',
+            dir: 'test/coverage'
+        }, {
+            // 这就是Codecov支持的文件类型
+            type: 'cobertura',
+            subdir: '.',
+            dir: 'test/coverage'
+        }]
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
